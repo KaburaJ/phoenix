@@ -877,7 +877,7 @@ h1 span {
   }
 
   .solutions-image-1 {
-    max-width: 100%;
+    max-width: 20em;
   }
   .solutions-image {
     margin-left: 1%;
@@ -886,6 +886,7 @@ h1 span {
   }
 
   .technologies-section p{
+    margin-top: 2em;
     padding-top: 1em;
     margin-left: 4em !important;
   }
@@ -896,7 +897,7 @@ h1 span {
   .technologies-section .text {
     font-size: 24px;
     margin-left: 0.5em;
-    width: 300px;
+    width: 290px;
   }
 
   .tech-logo {
