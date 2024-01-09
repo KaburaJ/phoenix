@@ -1,0 +1,370 @@
+.solutions {
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  background-color: white;
+  opacity: 20;
+}
+
+.solutions-main {
+  margin-top: 10px;
+}
+.solutions-main,
+.solutions-headers,
+.animated-line-container,
+.value-proposition,
+.solutions-section,
+.technologies-section {
+  background: none;
+}
+
+.solutions-headers {
+  display: flex;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: -6em;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sub-container .solutions-image {
+  margin-top: -10em;
+  background-image: none !important;
+}
+.solutions-headers .main-context .app-name {
+  color: #008000;
+  background-color: #4190414d;
+  padding: 8px;
+  width: 120px;
+  margin-top: 23px;
+  margin-bottom: -4px;
+  margin-left: 2.4em;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.app-name span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInRight 2s infinite;
+}
+
+.app-name span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.app-name span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.app-name span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.app-name span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.app-name span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.app-name span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.app-name span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.main-context {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+  height: 150%;
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+.solutions-main .main-text {
+  margin-top: 3%;
+  margin-left: 2.2em;
+  font-weight: lighter;
+  word-wrap: break-word;
+  font-family: "Inter";
+  line-height: 4.5em;
+  width: 29em;
+  z-index: 999;
+}
+
+.solutions-main .main-text .span-green {
+  color: #008000 !important;
+  font-size: 58px;
+  margin-right: 10px;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-text span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.main-text span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.filter {
+  margin-top: 6em;
+  background-color: #f0f2f4;
+  margin-bottom: -2em;
+  padding-bottom: 2em;
+}
+
+.filter h2 {
+  margin-left: 25em;
+  padding-top: 2em;
+  color: #008000;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.filter-section {
+  margin-left: 64.5em;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.filter-section label {
+  color: #008000;
+}
+
+.filter-section select {
+  background-color: #4190414d;
+  padding-left: 0.5em;
+  margin-right: 3.8em;
+  height: 2em;
+  width: 8em;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.solutions-headers-2 .solution-context {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 3.5em;
+  gap: 1em;
+  padding-bottom: 4em;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  margin-top: 6em;
+}
+
+.solution-card {
+  background-color: white;
+  padding: 2em;
+  border-radius: 25px;
+  margin-bottom: 1em;
+}
+
+.solution-card img {
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+}
+
+.solution-card h3 {
+  color: #008000;
+}
+
+.solution-card .arrow-icon {
+  color: #008000;
+  position: absolute;
+  margin-top: 9em;
+  margin-left: 20em;
+  transition: transform 0.5s ease-in-out infinite;
+}
+
+.solution-card:hover .arrow-icon {
+  transform: translateX(10px);
+  cursor: pointer;
+}
+
+@keyframes icon-animation {
+  0% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-context {
+    width: 100%;
+  }
+  .sub-container .main-text {
+    margin-left: 1em;
+    max-width: 20em;
+  }
+  .sub-container .main-text .span-green {
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  .sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .sub-container .solutions-image {
+    margin-top: -4em;
+    max-width: 20em;
+    height: 20em;
+    margin-left: -1.5em;
+  }
+  .solutions-headers .main-context .app-name {
+    color: #008000;
+    background-color: #4190414d;
+    padding: 8px;
+    width: 120px;
+    margin-top: 23px;
+    margin-bottom: -4px;
+    margin-left: 2.4em;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .filter-section {
+    margin-left: 2.5em;
+  }
+  .solutions-headers-2 .solution-context {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+
+  .solution-card img {
+    width: 14em;
+    height: 10em;
+    object-fit: cover;
+  }
+  .solution-card .arrow-icon {
+    margin-left: 13em;
+    margin-top: 5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-context {
+    width: 100%;
+  }
+  .sub-container .main-text {
+    margin-left: 1em;
+    max-width: 15em;
+  }
+  .sub-container .main-text .span-green {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  .sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .sub-container .solutions-image {
+    margin-top: 1em;
+    max-width: 10em;
+    object-fit: cover;
+    height: 10em;
+    margin-left: -1.4em;
+  }
+  .solutions-headers .main-context .app-name {
+    color: #008000;
+    background-color: #4190414d;
+    padding: 8px;
+    width: 80px;
+    margin-top: -34px;
+    margin-bottom: 8px;
+    margin-left: .7em;
+  }
+  .filter-section {
+    margin-left: 2.5em;
+  }
+  .solutions-headers-2 .solution-context {
+    display: block;
+    width: 18em;
+    margin-left: 1em;
+    margin-top: 2em;
+  }
+
+  .solution-card img {
+    width: 14em;
+    height: 10em;
+    object-fit: cover;
+  }
+  .solution-card .arrow-icon {
+    margin-left: 13em;
+    margin-top: 5em;
+  }
+}
+

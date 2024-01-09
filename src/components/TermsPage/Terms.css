@@ -1,0 +1,42 @@
+
+.terms-body {
+    box-sizing: border-box;
+  }
+  
+  .terms-content {
+    box-sizing: border-box;
+    padding: 6em;
+    padding-top: 2em;
+    font-size: 24px;
+    text-align: justify;
+  }
+  
+  .terms-header {
+    padding-top: 2em;
+    font-size: 24px;
+    margin-left: 2em;
+    color: #008000;
+    background-color: transparent;
+  }
+  
+  @media screen and (max-width: 900px){
+    .terms-content {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .terms-body {
+      margin-bottom: -3em;
+    }
+    .terms-body .terms-header {
+      margin-left: .8em;
+      margin-top: -1em;
+    }
+    .terms-content {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 18px;
+    }
+  }

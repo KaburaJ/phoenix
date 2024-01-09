@@ -1,0 +1,913 @@
+.home {
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  background-color: #f0f2f4;
+  opacity: 20;
+}
+
+.home-main {
+  margin-top: 10px;
+}
+.home-main,
+.home-headers,
+.animated-line-container,
+.value-proposition,
+.solutions-section,
+.technologies-section {
+  background: none;
+}
+
+.home-headers {
+  display: flex;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-image: url("../../images/aluminous-green-wite-and-black-microcontroller-based-image-that-is-futuristic-and-fascinating\ \(2\).png");
+  background-size: cover;
+}
+
+.app-name {
+  color: #008000;
+  background-color: #4190414d;
+  padding: 8px;
+  width: 80px;
+  margin-top: 23px;
+  margin-bottom: -4px;
+  margin-left: 2.4em;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.app-name span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInRight 2s infinite;
+}
+
+.app-name span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.app-name span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.app-name span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.app-name span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.app-name span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.app-name span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.app-name span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.main-context {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+  height: 150%;
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+.home-main .main-text {
+  margin-top: 3%;
+  margin-left: 2.2em;
+  font-weight: lighter;
+  word-wrap: break-word;
+  font-family: "Inter";
+  line-height: 4.5em;
+  width: 30em;
+  z-index: 999;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-text .span-black {
+  color: black;
+  font-size: 48px;
+  font-family: "Inter";
+}
+
+.main-text .span-green {
+  color: white;
+  font-size: 48px;
+  margin-right: 10px;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-text span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.main-text span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.main-text span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.view-button {
+  color: white;
+  background-color: #4190414d;
+  font-weight: 600;
+  padding-left: 1.8em;
+  width: 12em;
+  margin-top: 2.8em;
+  margin-left: 2.2em;
+  box-shadow: 2px 2px 4px #008000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button .animated-text {
+  color: black;
+}
+
+.letter {
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  animation: letterAnimation 3s ease-in-out infinite;
+}
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.word {
+  animation: wordAnimation 2s linear infinite;
+}
+@keyframes wordAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.animated-line-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.animated-line {
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  background-color: #4190414d;
+  overflow: hidden;
+}
+
+.diagonal-line {
+  position: absolute;
+  width: 100%;
+  height: 22px;
+  background-color: #008000;
+  transform-origin: 0% 0%;
+  animation: moveDiagonal 8s linear infinite;
+}
+
+.diagonal-line:nth-child(2) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.diagonal-line:nth-child(3) {
+  top: 100%;
+  transform: rotate(45deg);
+}
+
+@keyframes moveDiagonal {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.value-header {
+  color: #008000;
+  font-size: 48px;
+  font-weight: normal;
+  margin-left: -0.5em;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 3s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.value-proposition .icons {
+  padding-top: 3em;
+}
+
+.animated-border-container {
+  width: 100%;
+  height: 2px; /* Set the height to create a horizontal line */
+  overflow: hidden;
+}
+
+.animated-border {
+  position: relative;
+  width: 0;
+  height: 100%;
+  background-color: #008000;
+  animation: slideBorder 2s forwards; /* Adjust the animation duration as needed */
+}
+
+@keyframes slideBorder {
+  to {
+    width: 100%;
+  }
+}
+
+.icon-images {
+  display: flex;
+  margin-left: 3.2em;
+}
+
+.icon-images .icon-1 {
+  width: 90px;
+  height: 90px;
+  margin-left: 4.2em;
+  margin-top: -2.8em;
+  position: absolute;
+  background-color: white;
+}
+
+.icon-images .icon-2 {
+  width: 80px;
+  height: 80px;
+  margin-left: 32em;
+  margin-top: -4.5em;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+}
+
+.icon-images .icon-3 {
+  width: 90px;
+  height: 90px;
+  margin-left: 63em;
+  margin-top: -3.5em;
+  position: absolute;
+  background-color: white;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4em;
+  gap: 320px;
+  margin-left: 4em;
+}
+
+.icon-text .line-up-1,
+.icon-text .line-up {
+  width: 200px;
+  color: #008000;
+  font-size: 18px;
+  animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.text-header {
+  color: black;
+  font-size: 16px;
+}
+
+.text-sub-header {
+  font-size: 16px;
+}
+
+.value-proposition {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.solutions-section {
+  background-color: #f0f2f4;
+  color: #008000;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.solutions-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.solutions-text .header {
+  margin-left: 1.5em;
+  padding-bottom: -1em;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.solutions-text h3 {
+  margin-left: 3em;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.solutions-section {
+  text-align: left;
+}
+
+.solutions-text h3 .additional-info {
+  display: none;
+  font-size: 18px;
+  color: black;
+}
+
+.solutions-text h3:hover .additional-info {
+  margin-top: 5px;
+  margin-left: 1.5em;
+  display: block;
+}
+
+.solutions-image {
+  width: 700px;
+  height: 600px;
+  background-image: url("../../images/aluminous-green-wite-and-black-microcontroller-based-image-that-is-futuristic-and-fascinating\ \(4\).png");
+  object-fit: cover;
+}
+
+.solutions-image-1 {
+  height: 600px;
+  background-image: url("../../images/generate-a-slam-robot-design-that-is-futuristic-and-has-the-colours-green-white-and-black-\ \(1\).png");
+  background-repeat: no-repeat;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.animated-text h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text h3:nth-child(1) {
+  animation-delay: 0.5s; /* Adjust the delay for the first element */
+}
+
+.animated-text h3:nth-child(2) {
+  animation-delay: 1.5s; /* Adjust the delay for the second element */
+}
+
+.animated-text h3:nth-child(3) {
+  animation-delay: 2.5s; /* Adjust the delay for the third element */
+}
+
+.animated-text h3:nth-child(4) {
+  animation-delay: 3.5s; /* Adjust the delay for the fourth element */
+}
+
+.technologies-section {
+  background-color: #f0f2f4;
+  margin-bottom: -1.9em;
+  margin-top: -5.5em !important;
+}
+
+.technologies-section p {
+  text-align: center;
+  color: hsl(120, 100%, 25%);
+  margin-left: 40% !important;
+}
+
+.technologies-section .text {
+  font-size: 48px;
+  margin-left: 1.5em;
+  padding-top: 2em;
+  width: 1200px;
+  text-align: center;
+}
+
+.text .green {
+  color: #008000;
+}
+
+.text span {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  margin-right: 10px;
+  animation: fadeInUp 1s forwards;
+}
+
+.text span.green {
+  color: #008000;
+}
+
+.text span:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icons-carousel {
+  padding-top: 6em;
+  margin-left: 5em;
+  margin-right: 2em;
+  padding-bottom: 8em;
+}
+
+.green .waviy span {
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 550px;
+}
+
+h1 span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 270px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .value-proposition .value-header {
+    font-size: 44px;
+  }
+
+  .value-proposition .icons {
+    gap: 2em;
+  }
+  .icon-images {
+    margin-left: 1em;
+  }
+
+  .icon-images .icon-1 {
+    width: 60px;
+    height: 60px;
+    margin-left: 2.2em;
+    margin-top: -2.4em;
+  }
+
+  .icon-images .icon-2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 14em;
+    margin-top: -3.8em;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .icon-images .icon-3 {
+    width: 90px;
+    height: 90px;
+    margin-left: 30em;
+    margin-top: -3.5em;
+  }
+
+  .icon-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+    gap: 195px;
+    margin-left: 1.5em;
+  }
+
+  .icon-text .line-up-1 .text-header,
+  .icon-text .line-up .text-header {
+    width: 100%;
+    font-size: 16px;
+  }
+  .icon-text .line-up-1 .text-header {
+    margin-left: -2.8em;
+  }
+
+  .icon-text .line-up-1 .text-sub-header,
+  .icon-text .line-up .text-sub-header {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .icon-text .line-up-1 .text-sub-header {
+    margin-left: -3em;
+  }
+
+  .icon-text .line-up:nth-child(3) {
+    margin-left: -9em;
+  }
+  .header .letter {
+    font-size: 32px;
+    padding-top: 2em;
+    margin-left: -0.2em;
+  }
+  .solutions-section {
+    width: 100%;
+  }
+  .solutions-section .solutions-text .animated-text {
+    margin-top: -1em;
+    margin-left: -2em;
+  }
+
+  .solutions-text .animated-text {
+    font-size: 14px;
+  }
+
+  .solutions-image {
+    margin-left: 1%;
+  }
+
+  .technologies-section .text {
+    font-size: 32px;
+    margin-left: 2em;
+    width: 550px;
+  }
+
+  .tech-logo {
+    max-width: 4em;
+    max-height: 4em;
+    margin-right: 8em;
+  }
+
+  .icons-carousel {
+    margin-left: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-context .app-name {
+    font-size: 10px;
+    margin-top: -4em;
+    margin-left: 0.5em;
+  }
+  .main-context .main-text {
+    font-size: 10px;
+    width: 30em;
+    line-height: 4em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+  }
+  .main-context .view-button {
+    width: 9em;
+    margin-left: 0.8em;
+    margin-top: 1em;
+    height: 2.5em;
+    padding-left: 0.3em;
+    margin-bottom: -0.8em;
+  }
+
+  .view-button .animated-text .letter {
+    font-size: 12px;
+    padding-top: 1em;
+    margin-right: 6px;
+  }
+  .view-button .animated-text .word {
+    font-size: 12px;
+    margin-top: -4em;
+    padding: 0px;
+    margin: 0px;
+  }
+  .value-proposition .value-header {
+    font-size: 30px;
+    padding: 0.5em;
+    padding-top: 2em;
+  }
+
+  .value-proposition .icons {
+    gap: 0.5em;
+    margin-top: -3em;
+  }
+  .icon-images {
+    margin-left: 1em;
+  }
+
+  .icon-images .icon-1 {
+    width: 40px;
+    height: 40px;
+    margin-left: 0.2em;
+    margin-top: -1.6em;
+  }
+
+  .icon-images .icon-2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 6.5em;
+    margin-top: -2.5em;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .icon-images .icon-3 {
+    width: 30px;
+    height: 30px;
+    margin-left: 15em;
+    margin-top: -1.2em;
+  }
+
+  .icon-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    gap: 175px;
+    margin-left: -0.1em;
+  }
+
+  .icon-text .line-up-1 .text-header,
+  .icon-text .line-up .text-header {
+    width: 7em;
+    font-size: 12px;
+    text-align: center;
+  }
+  .icon-text .line-up-1 .text-header {
+    margin-left: -4.9em;
+    text-align: right;
+  }
+
+  .icon-text .line-up-1 .text-sub-header,
+  .icon-text .line-up .text-sub-header {
+    width: 8em;
+    font-size: 11px;
+  }
+
+  .icon-text .line-up-1 .text-sub-header {
+    margin-left: -5.3em;
+    text-align: right;
+  }
+
+  .icon-text .line-up:nth-child(3) {
+    margin-left: -9em;
+  }
+  .header .letter {
+    font-size: 32px;
+    padding-top: 2em;
+    margin-left: -0.2em;
+  }
+  .solutions-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .solutions-section .solutions-text .animated-text {
+    margin-top: -1em;
+    margin-left: -2em;
+  }
+
+  .solutions-text .animated-text {
+    font-size: 8px;
+    padding-top: -2em;
+  }
+
+  .solutions-image-1 {
+    max-width: 100%;
+  }
+  .solutions-image {
+    margin-left: 1%;
+    height: 18em;
+    width: 100%;
+  }
+
+  .technologies-section p{
+    padding-top: 1em;
+    margin-left: 4em !important;
+  }
+
+  .technologies-section .app-name span{
+    font-size: 16px;
+  }
+  .technologies-section .text {
+    font-size: 24px;
+    margin-left: 0.5em;
+    width: 300px;
+  }
+
+  .tech-logo {
+    max-width: 2em;
+    max-height: 2em;
+    margin-right: 8em;
+  }
+
+  .icons-carousel {
+    margin-top: -3em;
+    margin-bottom: -6em;
+    margin-left: 1em;
+  }
+}
