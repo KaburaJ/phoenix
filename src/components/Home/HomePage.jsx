@@ -190,7 +190,7 @@ const HomePage = () => {
                     <span className='green'>for you</span>
                 </div>
                 <div className='technologies-icons'>
-                    {/* <img></img> */}
+                    <img></img>
 
                 </div>
                 <div>
