@@ -261,55 +261,57 @@
     width: 100%;
   }
   .sub-container .main-text {
-    margin-left: 1em;
-    max-width: 20em;
+    margin-left: 5%;
+    max-width: 60%;
   }
   .sub-container .main-text .span-green {
-    margin-right: 10px;
+    margin-right: 4%;
     font-size: 50px;
   }
   .sub-container {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 5%;
   }
 
   .sub-container .solutions-image {
-    margin-top: -4em;
-    max-width: 20em;
-    height: 20em;
-    margin-left: -1.5em;
+    margin-top: -4%;
+    max-width: 90%;
+    height: 90%;
+    margin-left: -9%;
   }
   .solutions-headers .main-context .app-name {
     color: #008000;
     background-color: #4190414d;
-    padding: 8px;
-    width: 120px;
-    margin-top: 23px;
-    margin-bottom: -4px;
-    margin-left: 2.4em;
+    padding: 3%;
+    width: 18%;
+    margin-top: 2%;
+    margin-bottom: -.4%;
+    margin-left: 5.3%;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
   }
   .filter-section {
-    margin-left: 2.5em;
+    margin-left: 5.5%;
   }
   .solutions-headers-2 .solution-context {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
-    margin-left: 2em;
-    margin-top: 2em;
+    gap: 1.5%;
+    margin-left: 4.3%;
+    margin-right: 4.3%;
+    margin-top: 6%;
+    margin-bottom: 52%;
   }
 
   .solution-card img {
-    width: 14em;
-    height: 10em;
+    width: 94%;
+    height: 70%;
     object-fit: cover;
   }
   .solution-card .arrow-icon {
-    margin-left: 13em;
-    margin-top: 5em;
+    margin-left: 33%;
+    margin-top: 15%;
   }
 }
 
@@ -318,8 +320,8 @@
     width: 100%;
   }
   .sub-container .main-text {
-    margin-left: 1em;
-    max-width: 15em;
+    margin-left: 1%;
+    max-width: 60%;
   }
   .sub-container .main-text .span-green {
     margin-right: 10px;
@@ -332,39 +334,42 @@
   }
 
   .sub-container .solutions-image {
-    margin-top: 1em;
-    max-width: 10em;
+    position: absolute;
+    margin-top: .3%;
+    min-width: 6%;
     object-fit: cover;
-    height: 10em;
-    margin-left: -1.4em;
+    height: 50%;
+    margin-left: 36.4%;
   }
   .solutions-headers .main-context .app-name {
     color: #008000;
     background-color: #4190414d;
     padding: 8px;
-    width: 80px;
-    margin-top: -34px;
-    margin-bottom: 8px;
-    margin-left: .7em;
+    width: 30%;
+    margin-top: -14%;
+    margin-bottom: 5%;
+    margin-left: .7%;
   }
   .filter-section {
-    margin-left: 2.5em;
+    margin-left: 8%;
   }
   .solutions-headers-2 .solution-context {
     display: block;
-    width: 18em;
-    margin-left: 1em;
-    margin-top: 2em;
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+
+  .solution-card {
+    height: 100%;
   }
 
   .solution-card img {
-    width: 14em;
-    height: 10em;
     object-fit: cover;
   }
   .solution-card .arrow-icon {
-    margin-left: 13em;
-    margin-top: 5em;
+    margin-left: 68%;
+    margin-top: 25%;
   }
 }
 

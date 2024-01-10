@@ -32,6 +32,7 @@
   color: white;
 }
 
+.section-tags-1,
 .section-tags {
   text-align: center;
   color: #008000;
@@ -103,23 +104,23 @@
 
 @media screen and (max-width: 900px) {
   .about-text {
-    max-width: 500px;
+    max-width: 76%;
   }
 
   .about-text .about-sub-text {
-    max-width: 400px;
+    max-width: 70%;
   }
 
   .youtube-video {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-top: -18em;
-    margin-left: 30em;
+    width: 25%;
+    height: 20%;
+    margin-top: -44%;
+    margin-left: 70%;
   }
 
   .youtube-video p {
-    margin-top: 2.5em;
+    margin-top: 32.5%;
     text-align: center;
     font-style: italic;
     font-size: 22px;
@@ -128,44 +129,47 @@
   .metrics {
     display: flex;
     flex-direction: row;
-    gap: 6em;
-    padding: 4em;
-    margin-top: -6em;
+    gap: 6%;
+    padding: 4%;
+    margin-top: -6%;
   }
-  
+
   .metric {
-    gap: 2px;
+    gap: 2%;
   }
   .team {
-    margin-top: 2em;
-    margin-bottom: 5em;
+    margin-top: 2%;
+    margin-bottom: 12%;
   }
-  
+
   .team h2 {
-    padding-left: .5em;
-    padding-right: .5em;
-    padding-bottom: .5em;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 0.5%;
   }
-  
 }
 
 @media screen and (max-width: 400px) {
-  .app-name {
-    margin-left: 1em;
-    margin-top: -8em;
-    font-size: 14px;
+  .about {
+    margin-top: 0.4%;
+  }
+  .about .app-name {
+    margin-left: 4%;
+    font-size: 12px;
   }
   .about-text {
-    max-width: 350px;
-    padding: .3em;
+    min-width: 105%;
+    padding: 0.3em;
+    font-size: 16px;
+    align-items: center;
   }
 
   .about-text .about-sub-text {
-    max-width: 260px;
-    font-size: 18px;
+    max-width: 80%;
   }
   .about-text .about-sub-text .text {
-    font-size: 34px !important;
+    font-size: 28px !important;
+    margin-left: 1%;
   }
 
   .headers {
@@ -175,31 +179,35 @@
   }
 
   .headers .main-header {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
 
-  .section-tags{
-    margin-top: 2em;
+  .section-tags {
+    margin-top: 14%;
+  }
+
+  .section-tags-1 {
+    margin-top: -6.5%;
   }
 
   .youtube-video {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-top: -3em;
+    width: 40%;
+    height: 25%;
+    margin-top: -2em;
     margin-left: 5.2em;
   }
 
   .youtube-video p {
-    margin-top: 3.3em;
+    margin-top: 40%;
     text-align: center;
     font-style: italic;
     font-size: 18px;
     color: white;
   }
 
-  .value-proposition{
-    margin-bottom: -1.5em;
+  .value-proposition {
+    margin-bottom: -18.5%;
   }
   .value-proposition .value-header {
     margin-top: -1.5em;
@@ -207,27 +215,31 @@
 
   .metrics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);    
+    grid-template-columns: repeat(2, 1fr);
     gap: 2em;
-    padding: 2em;
-    margin-top: 4em;
+    padding: 5%;
+    margin-top: 4%;
   }
-  
+
   .metric {
     gap: 2px;
   }
   .team {
-    margin-top: -3em;
-    margin-bottom: 5em;
+    margin-top: -10%;
+    margin-bottom: 5%;
   }
-  
+
   .team h2 {
-    padding-left: .5em;
-    padding-right: .5em;
-    padding-bottom: .5em;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 32px;
   }
-  .team .images{
+  .team .images {
     display: block;
   }
-  
+  .team .images .image-content {
+    font-size: 15px;
+    padding-bottom: 2em;
+  }
 }

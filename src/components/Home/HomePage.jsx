@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Slider from 'slick-carousel/slick/slick';
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaBeer, FaChartBar, FaCloud, FaDoorClosed, FaHammer, FaLaptop, FaRobot, FaServer, FaShieldAlt } from "react-icons/fa";
@@ -81,9 +81,9 @@ const HomePage = () => {
                                 <span className='span-green'>Software</span>
                                 <span className='span-green'>Needs</span>
                             </div>
-                            <p className='view-button'><p class="animated-text">
-                                <span class="letter">VIEW OUR</span>
-                                <span class="word">SOLUTIONS</span>
+                            <p className='view-button'><p className="animated-text">
+                                <span className="letter">VIEW OUR</span>
+                                <span className="word">SOLUTIONS</span>
                             </p></p>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const HomePage = () => {
             </div>
             <div className='solutions-section'>
                 <div className='solutions-text'>
-                    <h2 className='header'><p class="animated-text">
+                    <h2 className='header'><p className="animated-text">
                         <span className="letter" style={{ color: '#008000' }}>What we bring to the table</span>
                     </p></h2>
                     <div className='animated-text' style={{ marginTop: '-4em' }}>
@@ -137,7 +137,7 @@ const HomePage = () => {
             <div className='solutions-section' style={{ backgroundColor: 'white' }}>
                 <div className='solutions-text'>
                     <h2 className='header'>
-                        <p class="animated-text">
+                        <p className="animated-text">
                             <span className="letter" style={{ color: '#008000' }}>Empowering Your Digital Journey</span>
                         </p>
                     </h2>

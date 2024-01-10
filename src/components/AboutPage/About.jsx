@@ -64,7 +64,7 @@ const About = () => {
                     </div>
                 </div>
                 
-                <div className="section-tags" style={{ paddingTop: '6em' }}>OUR VISION</div>
+                <div className="section-tags-1" style={{ paddingTop: '6em' }}>OUR VISION</div>
                 <div className='value-proposition'>
                     <h2 className='value-header'>Our team of professionals guarantees quality solutions at affordable rates</h2>
                     <div className='icons'>
