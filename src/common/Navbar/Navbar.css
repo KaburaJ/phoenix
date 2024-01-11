@@ -287,7 +287,7 @@ transform-origin: bottom left;
   
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 400px) {
   .navbar-container {
     gap: 0em;
   }
@@ -320,7 +320,7 @@ transform-origin: bottom left;
   
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 900px) {
   .navbar-container {
     gap: 0em;
   }
@@ -350,4 +350,4 @@ transform-origin: bottom left;
     position:absolute
   }
   
-}
+} */
