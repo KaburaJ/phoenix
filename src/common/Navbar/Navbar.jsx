@@ -19,7 +19,9 @@ const Navbar = () => {
   };
 
   const handleHome = () => {
+    navigate('/home')
     handleActiveOption('/home');
+
   };
 
   const handleAbout = () => {
@@ -34,6 +36,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
+        <>
             <section  style={{marginLeft:'9em', marginTop:'3.5em'}} onClick={handleHome}>
                 <div class="content">
                     <div class="text-wrapper">
@@ -45,7 +48,7 @@ const Navbar = () => {
                 </div>
             </section>
       <p onClick={handleHome}>Technologies</p>
-
+      </>
       <div className="nav-options">
         <h3
           className={`solutions-header ${activeOption === 'solutions' ? 'active' : ''}`}
