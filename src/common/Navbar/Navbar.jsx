@@ -7,24 +7,29 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [activeOption, setActiveOption] = useState('');
 
+  const handleActiveOption = (activeOption) => {
+        let newOption = [...activeOption, activeOption]
+        setActiveOption(newOption)
+  }
+
+
   const handleSolutions = () => {
     navigate('/solutions');
-    setActiveOption('solutions');
+    handleActiveOption('solutions');
   };
 
   const handleHome = () => {
-    navigate('/home');
-    setActiveOption('home');
+    handleActiveOption('/home');
   };
 
   const handleAbout = () => {
     navigate('/about');
-    setActiveOption('about');
+    handleActiveOption('about');
   };
 
   const handleContact = () => {
     navigate('/contact');
-    setActiveOption('contact');
+    handleActiveOption('contact');
   };
 
   return (
