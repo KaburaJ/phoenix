@@ -85,7 +85,7 @@ outline: none;
 }
 
 .nav-options .solutions-header:focus,
-.nav-options .solutions-header:active {
+.nav-options .solutions-header.active {
 color: #008000;
 }
 
@@ -104,7 +104,7 @@ transition: transform 0.25s ease-out;
 
 .nav-options .solutions-header:hover::after,
 .nav-options .solutions-header:focus::after,
-.nav-options .solutions-header:active::after {
+.nav-options .solutions-header.active::after {
 transform: scale(1);
 transform-origin: bottom left;
 }
@@ -116,6 +116,8 @@ transform-origin: bottom left;
     cursor: pointer;
     position: relative;
 }
+
+
 
 .dark-mode-img {
     margin-top: 1.9em;
